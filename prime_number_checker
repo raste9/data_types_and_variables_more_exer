@@ -1,0 +1,41 @@
+# number = int(input('Enter a number: '))
+# #define a flag variable
+# flag = False
+#
+# if number == 1:
+#     print(number, 'is not prime number')
+# elif number > 1:
+#     #check for factors
+#     for i in range(2, number):
+#         if number % i == 0:
+#             #if factor is found, set flag True
+#             flag = True
+#             #beak out of loop
+#             break
+#     #check if flag is True
+#     if flag:
+#         print('False')
+#         # print(number, 'is not prime number')
+#     else:
+#         print('True')
+#         # print(number, 'is a prime number')
+
+        ------------------------------------------------------
+
+number = int(input())
+
+if number == 1:
+    print(number, 'is not prime number')
+elif number > 1:
+    #check for factors
+    for i in range(2, number):
+        if number % i == 0:
+            print(number, 'is not a prime number')
+            print(i, 'times', number // i,' is', number)
+            break
+    else:
+        print(number, 'is a prime number')
+#if input number is less than
+#or equal to 1, it is not prime
+else:
+    print(number,'is not a prime number')
