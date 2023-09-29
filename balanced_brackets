@@ -1,0 +1,15 @@
+number = int(input())
+list_counter_1 = []
+list_counter_2 = []
+
+for brackets in range(number):
+    current_command = input()
+    if "(" in current_command:
+        list_counter_1.append('(')
+    elif ")" in current_command:
+        list_counter_2.append(')')
+
+if len(list_counter_1) == len(list_counter_2):
+    print("BALANCED")
+else:
+    print("UNBALANCED")
