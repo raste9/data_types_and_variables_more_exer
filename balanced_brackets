@@ -1,15 +1,15 @@
 number = int(input())
-list_counter_1 = []
-list_counter_2 = []
+opening_brackets = ['(']
+closing_brackets = [')']
 
 for brackets in range(number):
     current_command = input()
     if "(" in current_command:
-        list_counter_1.append('(')
+        opening_brackets.append('(')
     elif ")" in current_command:
-        list_counter_2.append(')')
+        closing_brackets.append(')')
 
-if len(list_counter_1) == len(list_counter_2):
+if len(opening_brackets) == len(closing_brackets):
     print("BALANCED")
 else:
     print("UNBALANCED")
